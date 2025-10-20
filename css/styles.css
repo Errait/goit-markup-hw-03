@@ -6,8 +6,6 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 
-    box-sizing: border-box;
-    width: 100%;
 }
 h2 {
     font-weight: 700;
@@ -19,8 +17,7 @@ h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
-    margin-top: 0;
-    margin-bottom: 0;
+
 }
 
 a {
@@ -30,37 +27,18 @@ a {
 
     color: #434455;
 }
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 button {
     font-weight: 500;
     color: #fff;
 
     cursor: pointer;
-    border-radius: 4px;
-    padding: 16px 32px;
-    width: 169px;
-    height: 56px;
-
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
 }
 ul, li {
     list-style-type: none;
-    padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding: 24px 156px 24px 156px;
-
-}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -84,12 +62,6 @@ header {
     text-decoration: none;
     color: #2e2f42;
 }
-nav, nav ul, address ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-}
 .nav-ref:hover, .nav-ref:focus {
     color: #404bbf;
 }
@@ -98,6 +70,7 @@ nav, nav ul, address ul{
 }
 .contacts-ref {
     font-size: 16px;
+    letter-spacing: 0.02em;
 }
 .contacts-ref:hover, .contacts-ref:focus {
     color: #404bbf;
@@ -106,14 +79,6 @@ nav, nav ul, address ul{
 .hero {
     background-color: #2e2f42;
     color: #fff;
-
-    padding-top: 188px;
-    padding-bottom: 188px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .hero-title {
     font-weight: 700;
@@ -121,10 +86,6 @@ nav, nav ul, address ul{
     line-height: 60px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 496px;
     text-align: center;
 }
 .hero-button {
@@ -138,17 +99,7 @@ nav, nav ul, address ul{
 }
 
 .hiden-features {
-    display: none;
-}
-.features ul {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-
-    padding-left: 156px;
-    padding-right: 156px;
-    padding-top: 120px;
-    margin-bottom: 120px;
+    color: #2e2f42;
 }
 .features-name {
     margin-bottom: 8px;
@@ -160,46 +111,22 @@ nav, nav ul, address ul{
 
 .our-team {
     background: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .our-team-title {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-}
-.our-team ul{
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-
-    margin-top: 72px;
+    color: #2e2f42;
 }
 .team-card {
-    border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px;
-    width: 264px;
-    height: 380px;
-
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
-                0 1px 1px 0 rgba(46, 47, 66, 0.16), 
-                0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .team-member-name {
     letter-spacing: 0.02em;
     margin-top: 32px;
     margin-bottom: 8px;
+    color: #2e2f42;
 }
 .team-member-post {
     font-size: 16px;
@@ -209,21 +136,14 @@ nav, nav ul, address ul{
 
 .portfolio {
     margin: 120px 156px 120px 156px;
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
 }
 .portfolio-title {
+    font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
-}
-.portfolio-row {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+    color: #2e2f42;
 }
 .portfolio-card-title {
     font-weight: 500;
@@ -233,12 +153,6 @@ nav, nav ul, address ul{
     color: #2e2f42;
 }
 .portfolio-card-text {
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
-    padding: 32px 16px;
-    width: 360px;
-    height: 120px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -250,14 +164,13 @@ nav, nav ul, address ul{
 .footer {
     background: #2e2f42;
     color: #f4f4fd;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 156px;
 }
 .footer .logo {
+    color: #4d5ae5;
+}
+.footer-logo-span {
     color: #f4f4fd;
 }
 .footer-text {
-    width: 264px;
     margin-top: 16px;
 }
