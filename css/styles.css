@@ -44,14 +44,13 @@ ul, li {
     font-weight: 700;
     font-size: 18px;
 
-    line-height: 117%;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
     color: #4d5ae5;
-    margin-right: 36px;
 }
-.logo span {
+.logo-span {
     color: #2e2f42;
 }
 .nav-ref {
@@ -100,10 +99,12 @@ ul, li {
 
 .hiden-features {
     color: #2e2f42;
+    text-align: center;
 }
 .features-name {
     margin-bottom: 8px;
     letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 .features-text {
     color: #434455;
@@ -162,10 +163,10 @@ ul, li {
 
 
 .footer {
-    background: #2e2f42;
+    background-color: #2e2f42;
     color: #f4f4fd;
 }
-.footer .logo {
+.logo {
     color: #4d5ae5;
 }
 .footer-logo-span {
@@ -173,4 +174,7 @@ ul, li {
 }
 .footer-text {
     margin-top: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
