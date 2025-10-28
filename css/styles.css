@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -7,19 +11,23 @@ body {
     background-color: #FFFFFF;
 
 }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 h2 {
     font-weight: 700;
     font-size: 36px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
-
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
 a {
     font-size: 12px;
     line-height: 150%;
@@ -36,9 +44,33 @@ button {
 }
 ul, li {
     list-style-type: none;
-    margin: 0 0 0 0;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
 }
 
+.container {
+    width: 1158px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    gap: 48px 24px;
+}
+section {
+    padding-bottom: 120px;
+}
+
+
+
+header {
+    border-bottom: solid 1px;
+}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -53,6 +85,17 @@ ul, li {
 .logo-span {
     color: #2e2f42;
 }
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+    margin: 24px 0;
+}
+.nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 .nav-ref {
     font-weight: 500;
     font-size: 16px;
@@ -66,6 +109,10 @@ ul, li {
 }
 .contacts {
     font-style: normal;
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0;
+    gap: 40px;
 }
 .contacts-ref {
     text-decoration: none;
@@ -76,9 +123,16 @@ ul, li {
     color: #404bbf;
 }
 
+
 .hero {
     background-color: #2e2f42;
     color: #fff;
+
+    padding: 188px 0;
+}
+.hero .container {
+    flex-direction: column;
+    justify-items: center;
 }
 .hero-title {
     font-weight: 700;
@@ -87,23 +141,42 @@ ul, li {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+
+    margin: 0 350px;
 }
 .hero-button {
-    margin-top: 48px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+
+    width: 169px;
+    height: 56px;
+    margin: 0 auto;
 }
 .hero-button:hover, .hero-button:focus {
     cursor: pointer;
     background-color: #404BBF;
 }
 
+
+.features {
+    margin-top: 120px;
+}
 .hiden-features {
     color: #2e2f42;
     text-align: center;
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .features-name {
-    margin-bottom: 8px;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
@@ -111,8 +184,10 @@ ul, li {
     color: #434455;
 }
 
+
 .our-team {
     background: #f4f4fd;
+    padding: 120px 0;
 }
 .our-team-title {
     line-height: 1.11;
@@ -120,24 +195,34 @@ ul, li {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 .team-card {
     background: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-member-name {
     letter-spacing: 0.02em;
-    margin-top: 32px;
-    margin-bottom: 8px;
+    text-align: center;
     color: #2e2f42;
+    margin-top: 32px;
+    
 }
 .team-member-post {
     font-size: 16px;
+    text-align: center;
     color: #434455;
+    margin-bottom: 32px;
 }
 
 
 .portfolio {
-    margin: 120px 156px 120px 156px;
+    margin-top: 120px;
+}
+.portfolio .container {
+    flex-wrap: wrap;
 }
 .portfolio-title {
     font-size: 36px;
@@ -146,6 +231,13 @@ ul, li {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+
+    margin-bottom: 72px;
+}
+.portfolio-card {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 .portfolio-card-title {
     font-weight: 500;
@@ -153,19 +245,28 @@ ul, li {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+
+    margin: 32px 0 8px 16px;
 }
 .portfolio-card-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-}
 
+    margin: 0 0 32px 16px;
+}
 
 
 .footer {
     background-color: #2e2f42;
     color: #f4f4fd;
+
+    padding: 100px 0;
+}
+.footer .container {
+    flex-direction: column;
+    gap: 16px;
 }
 .logo {
     color: #4d5ae5;
@@ -174,8 +275,9 @@ ul, li {
     color: #f4f4fd;
 }
 .footer-text {
-    margin-top: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+
+    margin-right: 860px;
 }
