@@ -54,7 +54,6 @@ img {
     padding: 0 15px;
 }
 
-
 .main-header {
     border-bottom: 1px solid #e7e9fc;
 }
@@ -71,7 +70,8 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: #4d5ae5;
-
+}
+.header-logo {
     margin-right: 76px;
     padding: 24px 0;
 }
@@ -124,7 +124,6 @@ img {
     color: #404bbf;
 }
 
-
 .hero {
     background-color: #2e2f42;
     color: #fff;
@@ -161,7 +160,6 @@ img {
     background-color: #404BBF;
 }
 
-
 .features {
     padding: 120px 0;
 }
@@ -196,7 +194,6 @@ img {
 .features-text {
     color: #434455;
 }
-
 
 .our-team {
     background: #f4f4fd;
@@ -237,7 +234,6 @@ img {
     text-align: center;
     color: #434455;
 }
-
 
 .portfolio {
     padding-top: 120px;
@@ -283,7 +279,6 @@ img {
     color: #434455;
 }
 
-
 .footer {
     background-color: #2e2f42;
     color: #f4f4fd;
@@ -293,16 +288,6 @@ img {
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
-
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #4d5ae5;
 }
 .footer .container {
     flex-direction: column;
