@@ -28,13 +28,6 @@ p {
     padding: 0;
     margin: 0;
 }
-a {
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: 0.04em;
-
-    color: #434455;
-}
 button {
     font-weight: 500;
     color: #fff;
@@ -120,6 +113,9 @@ img {
     gap: 40px;
 }
 .contacts-ref {
+    font-size: 12px;
+    line-height: 150%;
+    color: #434455;
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 0.02em;
