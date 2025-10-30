@@ -296,7 +296,10 @@ img {
 }
 .footer .logo {
     display: inline-block;
+
+    padding: 0;
     margin-bottom: 16px;
+    margin-right: 0;
 }
 .footer .container {
     flex-direction: column;
