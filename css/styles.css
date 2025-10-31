@@ -58,6 +58,7 @@ img {
 }
 .main-header .container {
     display: flex;
+    align-items: center;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -86,7 +87,6 @@ img {
     gap: 40px;
 
     align-items: center;
-    padding: 24px 0;
 }
 .nav-ref {
     font-weight: 500;
@@ -103,7 +103,6 @@ img {
 }
 .contacts {
     margin-left: auto;
-    padding: 24px 0;
 }
 .contacts-list {
     font-style: normal;
